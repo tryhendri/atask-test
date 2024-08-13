@@ -1,0 +1,22 @@
+#index
+GET {{baseUrl}}
+
+#login end poit
+POST {{baseUrl}}/api/v1/authorizations
+Content-Type: application/json
+
+{
+    "email": "test@mail.com",
+    "password": "12345678"
+}
+
+#transaction end point
+POST {{baseUrl}}/api/v1/transactions
+Content-Type: application/json
+
+{
+    "source_wallet_id": "1",
+    "target_wallet_id": "2",
+    "amount": 100
+}
+
