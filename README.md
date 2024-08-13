@@ -50,7 +50,7 @@ I chose Polymorphic Associations over Single Table Inheritance (STI) to allow fo
 4. **Authorization:**
 Due to restrictions on using additional gems, including bcrypt for has_secure_password, I was compelled to implement session-based authorization for the API instead of token-based. While session-based authorization is not ideal for APIs, it was necessary given the project constraints.
 
-5. ** ACID Compliance: **
+5. **ACID Compliance:**
 To ensure ACID properties, I implemented database transactions and used a Service Object pattern to handle transaction logic.
 
 6. **Library Development:**
